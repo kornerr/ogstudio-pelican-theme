@@ -38,6 +38,10 @@ margin-bottom: 2em;
 
 .top-bar a { color: #2BA6E3 } /* Sitename color */
 
+.translation-button {
+margin-left: 1em;
+}
+
 
 /* Base.html sidebar */
 h5.sidebar-title {
