@@ -10,13 +10,33 @@ article { padding-left:1em; }
 
 /* Base.html - top navigation */
 .top-bar {
-background: #2BA6E3; /* Header color */
-height: 100%; 
-margin-bottom: 1em; 
+background: white; /* Header color */
+margin-bottom: 3em;
+margin-left: 1em;
+text-align: right;
 }
 
-.top-bar a { color: #fff } /* Sitename color */
-ul.button-group.navigation { margin-bottom: 1em; }
+.top-menu {
+background: #2BA6E3; /* Menu color */
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+.menu-button {
+color: white;
+margin-left: 1em;
+margin-right: 1em;
+text-transform: uppercase;
+}
+.menu-button:hover {
+color: #95d3f1;
+}
+
+nav {
+margin-bottom: 2em;
+}
+
+.top-bar a { color: #2BA6E3 } /* Sitename color */
 
 
 /* Base.html sidebar */
