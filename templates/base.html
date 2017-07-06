@@ -42,7 +42,7 @@
 <div class="row top-menu">
 <div class="large-12 columns">
 	{% for title, link in MENUITEMS %}
-    <a href="{{ link }}" class="button secondary small">{{ title }}</a>
+        <a href="{{ link }}" class="menu-button secondary">{{ title }}</a>
     {% endfor %}
 
     {% if DISPLAY_PAGES_ON_MENU %}
@@ -102,6 +102,15 @@
         <h5 class="sidebar-title">Links</h5>
         <ul class="side-nav">
         {% for name, link in LINKS %}
+            <li><a href="{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if PROJECTS %}
+        <h5 class="sidebar-title">Projects</h5>
+        <ul class="side-nav">
+        {% for name, link in PROJECTS %}
             <li><a href="{{ link }}">{{ name }}</a></li>
         {% endfor %}
         </ul>
